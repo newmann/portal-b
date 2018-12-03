@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+
+#  base:
+#    image: beiyelin/front-base
+#    build: -f Dockerfile-base
+  ng-alain:
+    image: registry.cn-hangzhou.aliyuncs.com/newmann/portal-a:20181028.1
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 80:80
