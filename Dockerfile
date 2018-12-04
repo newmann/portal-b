@@ -21,7 +21,7 @@ COPY package.json package-lock.json ./
 
 RUN npm set progress=false && npm config set depth 0 && npm cache clean --force
 
-RUN npm config set registry http://registry.cnpmjs.org
+RUN npm config set registry https://registry.npm.taobao.org
 
 RUN npm i && mkdir /front-alain && cp -R ./node_modules ./front-alain
 
