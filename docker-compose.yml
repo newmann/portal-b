@@ -11,4 +11,4 @@ services:
     environment:
       NODE_ENV: production
     ports:
-      - 80:80
+      - 8002:80
